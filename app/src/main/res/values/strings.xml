@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Medical Adviser</string>
+    <string name="signin">Login</string>
+    <string name="signup">Register</string>
+    <string name="search_disease">Search Disease</string>
+    <string name="search_medicine">Search Medicine</string>
+    <string name="search_hospital">Search Hospital</string>
+    <string name="search_blood">Search Blood</string>
+</resources>

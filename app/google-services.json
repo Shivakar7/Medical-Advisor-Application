@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "441422956824",
+    "firebase_url": "https://medicaladvisor-f8e48.firebaseio.com",
+    "project_id": "medicaladvisor-f8e48",
+    "storage_bucket": "medicaladvisor-f8e48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441422956824:android:5b402ea4bef7218720366d",
+        "android_client_info": {
+          "package_name": "medicaladvisor.com.medicaladvisor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441422956824-6qrvat6klsog2l0ri0fop4hs34ujpngb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "medicaladvisor.com.medicaladvisor",
+            "certificate_hash": "1703723afdcfb51c3e933f9da2c70804621f3dd9"
+          }
+        },
+        {
+          "client_id": "441422956824-5ikvtf4d7v2sc85mg3sa982i5pugg7iq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs3Oq_DSnhCc7S9amXqEspqINBeIWaJE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441422956824-5ikvtf4d7v2sc85mg3sa982i5pugg7iq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

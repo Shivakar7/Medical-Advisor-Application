@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabsActivity">
+
+    <LinearLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/diseasesTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="diseaseListImplementation"
+            android:paddingRight="1dp"
+            android:text="@string/search_disease"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/medicineTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="medicineListImplementation"
+            android:text="@string/search_medicine"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/hospitalsTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="hospitalsListImplementation"
+            android:text="@string/search_hospital"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/bloodTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="bloodListImplementation"
+            android:text="@string/search_blood"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/diseasesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabLayout"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/diseasesSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/search_disease"></EditText>
+
+        <ListView
+            android:id="@+id/diseasesList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/diseasesSearch"
+            android:layout_marginBottom="5dp"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:dividerHeight="2dp"></ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/medicineLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabLayout"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/medicineSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/search_medicine"></EditText>
+
+        <ListView
+            android:id="@+id/medicineList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/medicineSearch"></ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hospitalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabLayout"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/hospitalSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/search_hospital"></EditText>
+
+        <ListView
+            android:id="@+id/hospitalList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hospitalSearch"></ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bloodLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabLayout"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/bloodSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/search_blood"></EditText>
+
+        <ListView
+            android:id="@+id/bloodList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bloodSearch"></ListView>
+    </RelativeLayout>
+
+</RelativeLayout>
